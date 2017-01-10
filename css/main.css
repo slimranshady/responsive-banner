@@ -1,65 +1,58 @@
 html {
-  box-sizing: border-box;
-  font-family: Georgia, sans-serif;
+  font-family: Georgia, serif;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+body {
+  background-color: #495562;
 }
 
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
-.banner {
-  overflow: hidden;
-  position: relative;
-  max-height: 500px;
-  display: block;
-}
-
-.banner-body {
-  font-weight: normal;
+p {
   color: #fff;
-
-  margin: 0;
-  display: block;
-  bottom: 0;
-  left: 0;
 }
 
-.banner-title {
+h1 {
   color: #fff;
-
-  padding: 0;
-  margin: 0;
-  line-height: 1.5;
-  font-weight: 700;
-  width: 100%;
 }
 
-.banner-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  padding: 2rem;
-
-  line-height: 1.5;
-  width: 100%;
-  max-width: 50em;
+.btn {
+  color: #fff;
+  border-color: #97a49b;
+  background-color: transparent;
 }
 
-@media only screen and (min-width: 35em) {
+.btn:hover {
+  border-color: #fff;
+  color: #efefef;
+  background-color: #fff;
+}
 
-  .banner-text {
-    bottom: 0;
+@media only screen and (min-width: 60em) {
+
+  section {
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
-
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(17, 60, 0, 0), rgba(73, 85, 98, .9));
+    background-image: linear-gradient(rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
   }
 
+  header {
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .btn {
+    border-color: #fff;
+  }
+
+  .btn-div {
+    display: inline-block;
+  }
+
+  p {
+    display: inline-block;
+    margin-right: 25%;
+    max-width: 25em;
+  }
 }

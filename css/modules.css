@@ -53,10 +53,6 @@ template {
   display: none;
 }
 
-details {
-  cursor: pointer;
-}
-
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -901,8 +897,6 @@ a:hover, a:active {
 
 a:focus,
 [tabindex="0"]:focus,
-details:focus,
-summary:focus,
 input:focus,
 textarea:focus,
 button:focus,
